@@ -9,7 +9,7 @@ const config: DocsThemeConfig = {
   project: {
     link: 'https://github.com/sumanchapai/phy-150-rc',
   },
-  docsRepositoryBase: 'https://github.com/sumanchapai/phy-150-rc',
+  docsRepositoryBase: 'https://github.com/sumanchapai/phy-150-rc/blob/main/',
   footer: {
     text: 'Luther College | Engineering - 2023FA',
   },
