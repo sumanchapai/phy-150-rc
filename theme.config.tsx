@@ -1,7 +1,6 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 import { useConfig } from 'nextra-theme-docs'
-import { useRouter } from 'next/router'
 
 
 
@@ -16,12 +15,6 @@ const config: DocsThemeConfig = {
   },
   head: function useHead() {
     const { title } = useConfig()
-    const { route } = useRouter()
-    const socialCard =
-      route === '/' || !title
-        ? 'https://nextra.site/og.jpeg'
-        : `https://nextra.site/api/og?title=${title}`
-
     return (
       <>
         <meta name="msapplication-TileColor" content="#fff" />
@@ -37,14 +30,14 @@ const config: DocsThemeConfig = {
           content="Engineering 101 course at Luther"
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content={socialCard} />
+        <meta name="twitter:image" content={"/og.png"} />
         <meta name="twitter:site:domain" content="nextra.site" />
         <meta name="twitter:url" content="https://nextra.site" />
         <meta
           name="og:title"
           content={title ? title + ' – Physics 150 Luther' : 'Physics 150 Luther College'}
         />
-        <meta name="og:image" content={socialCard} />
+        <meta name="og:image" content={"/og.png"} />
         <meta name="apple-mobile-web-app-title" content="Nextra" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon.png" type="image/png" />
