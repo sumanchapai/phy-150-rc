@@ -1,5 +1,9 @@
 {
   "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)"
+  "assembling": "Assembling",
+  "line_tracking": "Line Tracking",
+  "ultrasound": "Ultrasound sensor",
+  "wifi": "Wifi",
+  "3d_printing": "3D printing",
+  "engineering_projects": "Engineering Projects"
 }
