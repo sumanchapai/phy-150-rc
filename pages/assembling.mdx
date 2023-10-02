@@ -1,0 +1,64 @@
+Note:
+- You can only run the car if the batter is charged, use a USB cable to charge it (takes approximately 1 hour)
+- Make sure the Servo Pin is connected to pin 9
+- When assembling the holders for the wheels, make sure it goes through 
+- To make it easy, run the code first and make sure the FRONT for the orange motor is 90, then attach it to the steering wheels, so that the wheels
+can turn full 90 degrees on either side (the turning degree does not go to negative)
+- The car's speed when turning is slightly lower than going forward front
+- Make sure to not lose any screws and nuts, as there are EXACTLY as many for the car 
+- The time is in microseconds (1000 is 1 seconds)
+- Speed is measured in rotation of motor
+
+1. Assembling 
+- Assemble the car as follows in the video: 
+https://osoyoo.com/2021/02/20/sg90-servo-steering-robot-car-lesson-1-hardware-installation-and-servo-test/
+
++ Install the back motor
++ Install the bearings into the rod, then install the rods onto the board, making sure that the screws go through the holes that is blocked, the
+holes that are not blocked are meant for the wheels
++ Peel off the white sticker on the UNO board, it makes it easier to assemble the car when you can see through it
++ Install the circuit parts as follows in the video, make sure that the two front motors are installed on different sides, the blue one is installed
+up, while the orange one is installed down
++ The sensor is installed upside down, so it faces opposite the blue motor 
+
+- For the Arduino board: 
++ Remove jumper caps on ENB-D6, IN3-D9, IN4-D10 
++ Connect back motor to either K1 or K2
++ Connect battery box to Motor Shield V1.1
++ Connect volt meter to Motor Shield V1.1
++ Connect orange motor to D9 
++ Connect blue motor to D10 
++ Connect tracker sensor, with 7 pins, to Motor Shield V1.1 
++ Connect ultrasound sensor, with 4 pins, to Motor Shield V1.1 
+
+
+Here is how all the parts work: 
+- The blue motor controls the ultrasound sensor (the cat face)
+- The orange motor controls the steering of the wheels 
+- The back motor controls the speed of the car (+ and -)
+- The Arduino board is where all the commands go to
+- The small board with 3 digits is the volt meter, measuring how much voltage is put in
+
+2. Steering test 
+Download this code and open it in your Arduino IDE, connect it to your Arduino and upload it 
+When you run this test, the car will face to the front at 90, turn left, and turn right, then faces front again.
+Make sure the car's front orientates with the board. If it doesn't, slightly change 90 up or down until it faces the right direction.
+
+3. Running the car 
+- Properties for the car 
++ Mass: 405 grams without Wifi module, 410 grams with Wifi module
++ Max speed: 255, corresponding to 12.07 km/h
++ Min speed: 91, corresponding to 3.017 km/h, any lower values you have to nudge the car for it to move 
++ Wheel estimated coefficient of friction: Resting = 
++ Max weight the car can carry at max speed: 
++ Max slope the car can go:
+
+Download this code and open it in your Arduino IDE, connect it to your Arduino and upload it 
+- The car should go forward, go backward, turn right, then turn left, then stop
+
+- You can play around with the code: 
++ Put the code in the void loop() section, and the car will repeat the actions 
++ Try making the car go in a loop
++ Test the car to see its maximum turning angle
++ See if the car can go over various obstacles 
+
