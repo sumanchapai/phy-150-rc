@@ -1,0 +1,25 @@
+Arduino: 
+- Comprised of both hardware and software
+- Used to make fairly straightforward commands and inputs for electronic devices 
+- Examples: Turning LED lights on or off, activating various sensors, making cars, drones, robotics, etc 
+
+Arduino Hardware: 
+- The major component is the Arduino board, also known as a microcontroller board, which processes the inputs and turn them into outputs
+- There are various types of Arduino boards, the one you are playing with is called Arduino Uno 
+- Basically, the Arduino Uno reads in the commands you put in from your code, and send them to the desired equipments and devices 
+- The board has two types of pins, analog and digital: 
+    + Analog pins can read any number of values, to measure this value, the board has an analog-to-digital converter (ADC), which converts analog
+    voltage to a digital value between 0 and 1023. You read this with the function analogRead(). 
+    + Digital pins can only read and output either High (5V or 3.3V) or Low (0V) voltage, corresponding to binary inputs (1 or 0), you use digital pins 
+    in situations where the input or output have one of those values, such as turning a switch on or off. 
+- When trying to send a value to a pin instead of receiving the signal, use the function analogWrite(), which has range from 0 to 255. You will see
+this in your driving test code when trying to send a speed command to the car, with 255 corresponding to the maximum speed the car can go.
+
+Arduino Software: 
+- The programming language for Arduino is Arduino IDE, which is a version of C++ with built-in functions
+- The two essential functions in Arduino IDE are setup() and loop()
+    + setup() is the function that runs the commands only once, and the one you always put first
+    + loop() is the function that runs the commands repeatedly
+- You can make additional functions, and put them inside these two functions 
+- The time scale, at least in the codes that we'll be using, is in microseconds (1000 corresponds to 1 seconds)
+- Speed of the car is measured in analog values, so 0 to 255

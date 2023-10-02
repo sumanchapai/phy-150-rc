@@ -1,19 +1,21 @@
 Running the car 
 Here are some physical properties of the car: 
 - Mass: 405 grams without Wifi module, 410 grams with Wifi module
-- Max speed: 255, corresponding to 12.07 km/h
-- Min speed: 91, corresponding to 3.017 km/h, any lower values you have to nudge the car for it to move 
+- Max speed: analog value is 255, corresponding to 12.07 km/h
+- Min speed: analog value is 91, corresponding to 3.017 km/h, any lower values you have to nudge the car for it to move 
 - Wheel estimated coefficient of rolling friction = 
 - Max slope the car can go up: 
 
-Code upload: 
-- Copy this code and open it in your Arduino IDE
+Copy this code and open it in your Arduino IDE
+https://gist.github.com/minhviet0308/45b32dd6eb89d4b52c5bc8cc925e6c8c
 
 - Modify line 21 to make the car's FRONT accurate
+- Modify line 22 and 23 to adjust the right and left turning angles 
+- Modify line 27 and 28 to adjust the normal and high speed of the car
 - Connect it to your car and upload it
-- The car should go forward, go backward, turn right, then turn left, then stop, with a 1s delay between each action 
+
+The car should go forward, go backward, turn right, then turn left, then stop, with a 1s delay between each action 
 
 - You can play around with the code: 
 + Put the code in the void loop() section, and the car will repeat the actions 
-+ Try making the car go in a loop
 

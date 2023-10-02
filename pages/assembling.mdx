@@ -1,42 +1,41 @@
-Note:
-- You can only run the car if the batter is charged, use a USB cable to charge it (takes approximately 1 hour)
+Note for assembling:
+- You can only run the car if the battery is charged, which takes approximately 90 minutes
 - Make sure the Servo Pin is connected to pin 9
 - When assembling the holders for the wheels, make sure it goes through 
-- To make it easy, run the code first and make sure the FRONT for the orange motor is 90, then attach it to the steering wheels, so that the wheels
-can turn full 90 degrees on either side (the turning degree does not go to negative)
-- The car's speed when turning is slightly lower than going forward front
+- The car requires a little bit more speed to turn than going forward 
 - Make sure to not lose any screws and nuts, as there are EXACTLY as many for the car 
-- The time is in microseconds (1000 is 1 seconds)
-- Speed is measured in rotation of motor
 
 1. Assembling 
 - Assemble the car as follows in the video: 
 https://osoyoo.com/2021/02/20/sg90-servo-steering-robot-car-lesson-1-hardware-installation-and-servo-test/
 
-+ Install the back motor
-+ Install the bearings into the rod, then install the rods onto the board, making sure that the screws go through the holes that is blocked, the
-holes that are not blocked are meant for the wheels
-+ Peel off the white sticker on the UNO board, it makes it easier to assemble the car when you can see through it
-+ Install the circuit parts as follows in the video, make sure that the two front motors are installed on different sides, the blue one is installed
-up, while the orange one is installed down
-+ The sensor is installed upside down, so it faces opposite the blue motor 
+    + Install the back motor
+    + Install the bearings into the rod, then install the rods onto the board, making sure that the screws go through the holes that is blocked, the
+    holes that are not blocked are meant for the wheels
+    + Peel off the white sticker on the UNO board, it makes it easier to assemble the car when you can see through it
+    + Install the circuit parts as follows in the video, make sure that the two front motors are installed on different sides, the blue one is installed
+    up, while the orange one is installed down
+    + The sensor is installed upside down, so it faces opposite the blue motor 
 
 - For the Arduino board: 
-+ Remove jumper caps on ENB-D6, IN3-D9, IN4-D10 
-+ Connect back motor to either K1 or K2
-+ Connect battery box to PWR1 (red box)
-+ Connect volt meter to Motor Shield V1.1
-+ Connect orange motor to D9 
-+ Connect blue motor to D10 
-+ Connect tracker sensor, with 7 pins, to Motor Shield V1.1 (7 blue pins on top right corner)
-+ Connect ultrasound sensor, with 4 pins, to Motor Shield V1.1 
+    + Remove jumper caps on ENB-D6, IN3-D9, IN4-D10 
+    + Connect back motor to either K1 or K2
+    + Connect battery box to PWR1 (red box)
+    + Connect volt meter to Motor Shield V1.1
+    + Connect orange motor to D9 
+    + Connect blue motor to D10 
+    + Connect tracker sensor, with 7 pins, to Motor Shield V1.1 (7 blue pins on top right corner)
+    + Connect ultrasound sensor, with 4 pins, to Motor Shield V1.1 
 
 
 Here is how all the parts work: 
-- The blue motor controls the ultrasound sensor (the cat face)
-- The orange motor controls the steering of the wheels 
-- The back motor controls the speed of the car (+ and -)
-- The Arduino board is where all the commands go to
-- The small board with 3 digits is the volt meter, measuring how much voltage is put in
-
+- Blue motor: controls the ultrasound sensor (the cat face)
+- Orange motor: controls the steering of the wheels 
+- Back motor: controls the speed of the car (+ and -)
+- Volt meter: small board with 3 digits, measures how much voltage is put in 
+- Tracking sensor: senses differences in color underneath it, which is represented in the five LEDs
+- Ultrasound sensor detects objects by sending out sound pulses and receiving their echos
+- Wifi module: lets your car connects to Wifi internet, or let the car acts as a Wifi hotspot 
+- Bluetooth module: lets your car communicate with other devices at 9600 baud rate
+- The Arduino board is where all the commands are read, processed, and sent to the other parts
 
