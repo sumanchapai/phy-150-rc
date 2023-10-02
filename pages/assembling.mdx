@@ -24,11 +24,11 @@ up, while the orange one is installed down
 - For the Arduino board: 
 + Remove jumper caps on ENB-D6, IN3-D9, IN4-D10 
 + Connect back motor to either K1 or K2
-+ Connect battery box to Motor Shield V1.1
++ Connect battery box to PWR1 (red box)
 + Connect volt meter to Motor Shield V1.1
 + Connect orange motor to D9 
 + Connect blue motor to D10 
-+ Connect tracker sensor, with 7 pins, to Motor Shield V1.1 
++ Connect tracker sensor, with 7 pins, to Motor Shield V1.1 (7 blue pins on top right corner)
 + Connect ultrasound sensor, with 4 pins, to Motor Shield V1.1 
 
 
@@ -39,26 +39,4 @@ Here is how all the parts work:
 - The Arduino board is where all the commands go to
 - The small board with 3 digits is the volt meter, measuring how much voltage is put in
 
-2. Steering test 
-Download this code and open it in your Arduino IDE, connect it to your Arduino and upload it 
-When you run this test, the car will face to the front at 90, turn left, and turn right, then faces front again.
-Make sure the car's front orientates with the board. If it doesn't, slightly change 90 up or down until it faces the right direction.
-
-3. Running the car 
-- Properties for the car 
-+ Mass: 405 grams without Wifi module, 410 grams with Wifi module
-+ Max speed: 255, corresponding to 12.07 km/h
-+ Min speed: 91, corresponding to 3.017 km/h, any lower values you have to nudge the car for it to move 
-+ Wheel estimated coefficient of friction: Resting = 
-+ Max weight the car can carry at max speed: 
-+ Max slope the car can go:
-
-Download this code and open it in your Arduino IDE, connect it to your Arduino and upload it 
-- The car should go forward, go backward, turn right, then turn left, then stop
-
-- You can play around with the code: 
-+ Put the code in the void loop() section, and the car will repeat the actions 
-+ Try making the car go in a loop
-+ Test the car to see its maximum turning angle
-+ See if the car can go over various obstacles 
 
