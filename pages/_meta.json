@@ -1,6 +1,6 @@
 {
   "index": "Introduction",
-  "arduino": "Introduction to Arduino",
+  "arduino": "Arduino basics",
   "assembling": "Assembling",
   "steering_test": "Steering test",
   "driving_test": "Driving test", 
