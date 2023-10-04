@@ -7,7 +7,16 @@ https://gist.github.com/minhviet0308/b4aacec438c96ed28a8d8eedc74db842
 When you run this test, the car will face to the front at 90, turn left, and turn right, then faces front again.
 
 Note: 
-- Line 6 is the most important line, it dictates the angle which the motor sees as the 'front' of the car 
+- Make sure that the orange motor is connected to PIN 9, the blue motor is connected to PIN 10
+- The motor can turn anywhere from 0 to 180 degrees
+- Line 6 in the code is the most important line, it dictates the angle which the motor sees as the 'front' of the car 
 - Make sure the car's front orientates with the board. If it doesn't, slightly change 90 up or down until it faces the right direction.
-- Line 8 and 9 is the turning angles for left and right, change this however you like with respect to your front angle (ex: if you front is 90, then
+- Line 8 and 9 in the code are the turning angles for left and right, change this however you like with respect to your front angle (ex: if you front is 90, then
 your turning angles are 40 and 140)
+
+For fun: 
+- In the void setup() function, you will see some commented lines with 'cat' in them (14, 15, 19, 22).
+These lines will run the ultrasound sensor in the front of the car (the cat face), making it turn left,
+right, then front, just like the motor for the wheel. Try uncommenting them and upload the code. 
+- Copy and put the code in the setup() function in the void loop() function, and watch the car rotates
+repeatedly.

@@ -27,6 +27,16 @@ https://youtu.be/-bi1iFsd1q4
     + Connect tracker sensor, with 7 pins, to Motor Shield V1.1 (7 blue pins on top right corner)
     + Connect ultrasound sensor, with 4 pins, to Motor Shield V1.1 
 
+2. Installing software 
+- You can download Arduino IDE here: https://www.arduino.cc/en/software
+- When you open the software, go to Sketch -> Include Library, and make sure there is a library 
+called Servo 
+- In later sections, if you download the code from the original Osoyoo website, you will also need
+to install a PWMServo library package. We found that it is not necessary, the Servo package works
+equally well, so you only need one of these two libraries. 
+- Before you upload your code to the car, make sure that you go to Tools -> Board to select the correct
+Board, and Tools -> Port to select the correct Port. 
+
 
 Here is how all the parts work: 
 - Blue motor: controls the ultrasound sensor (the cat face)
