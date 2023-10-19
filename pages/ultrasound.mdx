@@ -6,8 +6,8 @@ Obstacle Avoidance:
 - Periodically, the car will stop and send pulses of sound to 5 different directions (front, mid left and right, sharp left and right), and 
 receives those pulses back once they hit an obstacle, within a time interval, it will multiply that by the speed of sound to get how far away 
 the obstacle is, if it is within 30cm, then the car will perform the following: 
-+ Go back if the obstacle is in front 
-+ Turn left/right if the obstacle is on its right/left 
+    + Go back if the obstacle is in front 
+    + Turn left/right if the obstacle is on its right/left 
 
 Note: 
 - The car can only periodically scan for obstacles left and right, but will, at all times, scan in front of it, since it is the direction
@@ -16,3 +16,5 @@ the ultrasound sensor is facing, so it can react to an object in front of it in 
 Download this code and open it in your Arduino IDE, connect it to your Arduino and upload it 
 https://gist.github.com/minhviet0308/6223919c969a1a06bae4f357c130df7d
 
+For fun: 
+- Change the code and let the car react spontaneously when in front of an object!
