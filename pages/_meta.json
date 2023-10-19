@@ -5,7 +5,7 @@
   "steering_test": "Steering test",
   "driving_test": "Driving test", 
   "line_tracking": "Line Tracking",
-  "ultrasound": "Ultrasound sensor",
+  "ultrasound": "Ultrasound sensor/Obstance Avoidance",
   "wifi": "Wifi",
   "3d_printing": "3D printing",
   "engineering_projects": "Engineering Projects"
